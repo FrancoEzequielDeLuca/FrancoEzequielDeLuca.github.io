@@ -101,7 +101,7 @@ h6{
   margin: 15px;
 }
 
-.collapsible {
+.caja {
     background-color: #777;
     color: white;
     cursor: pointer;
@@ -113,11 +113,11 @@ h6{
     font-size: 15px;
   }
   
-  .active, .collapsible:hover {
+  .active, .caja:hover {
     background-color: #555;
   }
   
-  .collapsible:after {
+  .caja:after {
     content: '\002B';
     color: white;
     font-weight: bold;
@@ -129,7 +129,7 @@ h6{
     content: "\2212";
   }
   
-  .content {
+  .contenido {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
