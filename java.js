@@ -1,11 +1,14 @@
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-
-
-//document.getElementById('presentacion').onclick=function () {
-//console.log("hola")
-//document.getElementById("demo").innerHTML = "Presentación" +"Considero ser una persona responsable y comprometido con mi tarea. Mi principal cualidad radica en disfrutar de mi trabajo, lo cual me impulsa a querer mejorar cada día. Mis superioes siempre me han apreciado por ser una persona respetuosa de las normas, solidaria y que mantiene una buena relación con sus colegas." }
-
-
-
-
-
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
